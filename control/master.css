@@ -1,0 +1,322 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header2 {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 400%;
+}
+
+header h2 {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  padding-top: 2%;
+  transform: translate(-50%, -50%);
+  bottom: -55vh;
+  font-size: 150%;
+}
+
+h3 {
+  font-weight: bold;
+  font-weight: 100;
+  font-size: 65px;
+}
+
+.social-icons {
+  margin: 0;
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -60vh;
+  font-size: 45px;
+  padding-top: 1%;
+}
+
+.fa,
+.far {
+  color: white;
+  font-size: 45px;
+  letter-spacing: 20px;
+}
+
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-image: url(../resources/Backgrounds/0.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+/* --------------------------------------------- */
+
+.prof-box {
+  width: 75%;
+  height: 670px;
+  background: #f99135;
+  padding: 40px;
+  color: white;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.line-break {
+  width: 500px;
+  border-top: 1px solid white;
+  margin: 0 auto;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  background-color: none;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+/* --------------------------------------------- */
+
+.scrolldown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2) {
+  transform: translate(0, 0);
+  animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------- */
+
+.border {
+  background-image: url(../resources/Backgrounds/2.jpg);
+  height: 100%;
+  padding-top: 100px;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#float {
+  position: relative;
+  -webkit-animation: floatBubble 2s normal ease-out forwards;
+  animation: floatBubble 2s ease-out forwards;
+}
+
+@-webkit-keyframes floatBubble {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes floatBubble {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -400px;
+  }
+}
+
+/* --------------------------------------------- */
+
+.parallax {
+  position: relative;
+  padding: 500px 15px;
+  color: #fff;
+  background: url(../resources/Backgrounds/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content {
+  font-size: 250%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.parallax1 {
+  background-image: url(../resources/Backgrounds/1.jpg);
+}
+
+.parallax2 {
+  background-image: url(../resources/Backgrounds/2.jpg);
+}
+
+.parallax3 {
+  background-image: url(../resources/Backgrounds/3.jpg);
+}
+
+@media screen and (max-width: 1024px) {
+  .parallax1 {
+    background-image: url(../resources/Backgrounds/grey.jpg);
+  }
+  .parallax2 {
+    background-image: url(../resources/Backgrounds/grey.jpg);
+  }
+  .parallax3 {
+    background-image: url(../resources/Backgrounds/grey.jpg);
+  }
+}
+
+p {
+  font-family: "Monument Extended";
+  font-weight: bold;
+  font-size: 75%;
+  color: white;
+  text-align: center;
+  font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.box1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #f99135;
+  padding: 60px;
+  color: white;
+  overflow: auto;
+  text-align: center;
+  left: 50%;
+  top: -250px;
+}
+
+.project-icons {
+  position: relative;
+  padding: 60px;
+  overflow: auto;
+  text-align: center;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+.fab,
+.fas {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
