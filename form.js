@@ -17,10 +17,14 @@ var user = firebase.auth().currentUser;
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
         console.log(user.email);
-        document.getElementById("display").innerHTML = "how do you impact pollution " + user.displayName + "?";
+        document.getElementById("display").innerHTML = "how do you impact pollution, " + user.displayName + "?";
         document.getElementById("id_u").value=user.uid;
+        document.getElementById("id_u").style.display = "none";
         document.getElementById("mail_u").value=user.email;
+        document.getElementById("mail_u").style.display = "none";
         document.getElementById("name_u").value=user.displayName;
+        document.getElementById("name_u").style.display = "none";
+
     }
     else {
         window.location.replace("login.html");
@@ -60,6 +64,17 @@ $('#submit-form').on('click', function(e) {
     success: alert("success")
   });
 })
+
+function submit(e){
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject(),
+      success: alert("success")
+    });
+}
 
 
 
