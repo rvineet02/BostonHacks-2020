@@ -398,7 +398,6 @@ a {
   background: white;
 }
 
-
 /* $bounced-timing: cubic-bezier(.64,
 .57,
 .47,
@@ -424,7 +423,6 @@ $bg-body: #FD9191; */
 
 button {
   position: relative;
-  left: 50%;
   background-color: bg-button;
   border: none;
   border-radius: 4px;
@@ -444,12 +442,12 @@ button {
   display: inline-flex;
   height: 40px;
   width: 200px;
-  border: 2px solid #BFC0C0;
+  border: 2px solid #bfc0c0;
   margin: 20px 20px 20px 20px;
-  color: #BFC0C0;
+  color: #bfc0c0;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
@@ -457,13 +455,10 @@ button {
 }
 
 a {
-  color: #BFC0C0;
+  color: #bfc0c0;
   text-decoration: none;
   letter-spacing: 1px;
 }
-
-
-
 
 /* Seventh Button */
 
@@ -476,21 +471,21 @@ a {
 #button-7 a {
   position: relative;
   left: 0;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   size: 1 rem;
 }
 
 #dub-arrow {
   width: 100%;
   height: 100%;
-  background: #BFC0C0;
+  background: #bfc0c0;
   left: -200px;
   position: absolute;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   bottom: 0;
 }
 
@@ -507,7 +502,7 @@ a {
   left: 150px;
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
   h1 {
     font-size: 2.2em;
   }
