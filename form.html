@@ -353,7 +353,7 @@
 
             <div>
                 <label>Energy Score</label>
-                <input id="en" type="text" name="energy_score" placeholder="Energy Score" />
+                <input id="energy" type="text" name="energy_score" placeholder="Energy Score" />
             </div>
 
             <div>
@@ -376,10 +376,9 @@
             </div>
         </form>
 
-
         <script>
             function displayRadioValue() {
-                document.getElementById("en").innerHTML = "";
+                //document.getElementById("result").innerHTML = "";
                 var ele = document.getElementsByTagName('input');
                 var count = 0;
                 var energy = 0;
@@ -388,7 +387,7 @@
 
                 for (i = 0; i < ele.length; i++) {
 
-                    if (ele[i].type = "radio") {
+                    if (true) {
 
                         if (ele[i].checked) {
                             if (count >= 10) {
@@ -404,11 +403,11 @@
                         count++;
                     }
                 }
-                document.getElementById("en").value = energy;
+                document.getElementById("energy").value = energy;
                 document.getElementById("water").value = water;
                 document.getElementById("waste").value = waste;
                 document.getElementById("total").value = water + waste + energy;
-
+                console.log("water score is: "+count);
 
 
             } 
