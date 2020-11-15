@@ -25,14 +25,16 @@
 </head>
 
 
-<body style="background-color: #222222;"></body>
+<body style="background-color: #222222;"></body>    
 
 <header>
 
-    <h1 id="name"></h1>
+    <h1 id="display"></h1>
     <h2>Fill out the form to find out</h2>
 
-
+    <div class="social-icons">
+    </a><a href="index.html" i class="far fa-arrow-alt-circle-left"></i></a>
+    </div>
 
     <div class="scrolldown">
         <span></span>
@@ -43,224 +45,321 @@
 
 
 
+<!-- <div class="parallax parallax">
+    <div class="parallax-content"> -->
+
+        <!-- <form id="test-form" action="https://script.google.com/macros/s/AKfycby-u7KPzDm1K2n5gqs0dh85FSNBcOmO28_ck1oGwDH6uEgKOICW/exec">
+            <div>
+                <label>ID</label>
+                <input id="id_u" type="text" name="tag" placeholder="ID" />
+            </div>
+
+            <div>
+                <label>E-mail ID</label>
+                <input id="mail_u" type="text" name="mail" placeholder="E-mail" />
+            </div>
+
+            <div>
+                <label>Name</label>
+                <input id="name_u" type="text" name="person" placeholder="Name" />
+            </div>
+
+            <div>
+                <label>Energy Score</label>
+                <input type="text" name="energy_score" placeholder="Energy Score" />
+            </div>
+
+            <div>
+                <label>Water Score</label>
+                <input type="text" name="water_score" placeholder="Water Score" />
+            </div>
+
+            <div>
+                <label>Waste Score</label>
+                <input type="text" name="waste_score" placeholder="Waste Score" />
+            </div>
+
+            <div>
+                <label>Total Score</label>
+                <input type="text" name="total" placeholder="Total Score" />
+            </div>
+
+            <div>
+                <button type="submit" id="submit-form">Submit</button>
+            </div>
+        </form> -->
+    <!-- </div>
+</div>  -->
+
+
+
 <div class="parallax parallax">
     <div class="parallax-content">
-
         <form>
-            <h2>question 1</h2>
+            <h4>Washing dishes by hand is the way to go.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I like to feel the suds.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, it depends if I have the time. 
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, dishwashers were invented for a reason.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 2</h2>
+            <h4>When I leave my room the fan stays on.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, the room has to stay cool for when I get back.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, I forget occasionally.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, fans only cool people not rooms.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 3</h2>
+            <h4>I always plan what I am going to eat before I open the fridge.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes,  I need a plan before I start digging around my kitchen.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, I’m not always in the mood to make something.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, I like seeing the big picture when planning my meals.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 4</h2>
+            <h4>My weekly laundry loads usually aren't that full.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I usually don’t have much to wash each week.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, every week is different.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, I wear a lot of clothes in a week. 
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 5</h2>
+            <h4>My pantry has reusable containers for organization.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I have OCD.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, it depends on the snack.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, my snacks already come in containers.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 6</h2>
+            <h4>The fridge always has to be full of Monster and Red Bull.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I’m a college student. 
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, only when midterms and finals roll around. 
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, energy drinks taste like pure sugar.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 7</h2>
+            <h4>Once the thermostat is set for the season I just leave it.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I’d rather keep the house at a consistent temperature.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, only if global warming lets me have an actual winter. 
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, the temperature inside must change with the temperature outside.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 8</h2>
+            <h4>My water stays on the whole time I’m brushing my teeth.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, the sound is soothing. 0
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, it depends if I’m tired.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, turning the faucet on and off is a free workout.
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 9</h2>
+            <h4>A long hot shower is exactly what I need every day.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, I’m a college student so this should be self explanatory.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, sleep is my hot shower.
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+                <label class="container">No, the shower may be hot but I don’t have time to dawdle. 
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
         </form>
 
         <form>
-            <h2>question 10</h2>
+            <h4> I make sure my phone or laptop is always at full charge.</h4>
             <div class="outsideContainer">
-                <label class="container">One
-                    <input type="radio" name="radio" value="1">
+                <label class="container">Yes, who knows when I’ll need it.
+                    <input type="radio" name="radioButton" value="1">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Two
-                    <input type="radio" name="radio" value="2">
+                <label class="container">Sometimes, only if I’m anticipating a busy day. 
+                    <input type="radio" name="radioButton" value="2">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Three
-                    <input type="radio" name="radio" value="3">
+                <label class="container">No, I’ve heard it’s best to let your battery die occasionally. 
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Four
-                    <input type="radio" name="radio" value="4">
+            </div>
+        </form>
+
+        <form>
+            <h4> My trash can has a trash bag in it.</h4>
+            <div class="outsideContainer">
+                <label class="container">Yes, it smells so bad I have to.
+                    <input type="radio" name="radioButton" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sometimes, it depends on which trash can.
+                    <input type="radio" name="radioButton" value="2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No, the trash is all going to the same place.
+                    <input type="radio" name="radioButton" value="3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+
+        <form>
+            <h4> I have magazine/newspaper subscriptions.</h4>
+            <div class="outsideContainer">
+                <label class="container">Yes, I like having a physical copy.
+                    <input type="radio" name="radioButton" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sometimes, it depends on the time of the year.
+                    <input type="radio" name="radioButton" value="2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No, I have my phone so there is no reason to.
+                    <input type="radio" name="radioButton" value="3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+
+        <form>
+            <h4> I use a recycling bin if I have one.</h4>
+            <div class="outsideContainer">
+                <label class="container">Yes, reduce reuse recycle! 
+                    <input type="radio" name="radioButton" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sometimes, I usually just toss stuff into the nearest bin. 
+                    <input type="radio" name="radioButton" value="2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No, it's all going to the same place anyway.
+                    <input type="radio" name="radioButton" value="3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+
+        <form>
+            <h4> When I’m not at home I make sure to turn off all my lights.</h4>
+            <div class="outsideContainer">
+                <label class="container">Yes, I doubt anyone will really care how my house looks. 
+                    <input type="radio" name="radioButton" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sometimes, it depends how long I will be out. 
+                    <input type="radio" name="radioButton" value="2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No, can’t make it look like no one is home.
+                    <input type="radio" name="radioButton" value="3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+
+        <form>
+            <h4> I wash my fruits and vegetables with running water.</h4>
+            <div class="outsideContainer">
+                <label class="container">Yes. gotta get them as clean as possible.  
+                    <input type="radio" name="radioButton" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sometimes, it depends on the food.  
+                    <input type="radio" name="radioButton" value="2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No, letting them sit in a bowl of water will do the job. 
+                    <input type="radio" name="radioButton" value="3">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -268,42 +367,121 @@
 
         <br>
 
-        <button type="button" onclick="displayRadioValue()">
+        <!-- <button type="button" onclick="displayRadioValue()">
             Submit
-        </button>
+        </button> -->
+
+        <div class="button" id="button-7" onclick="displayRadioValue()">
+            <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
+            <a href="#">Calculate</a>
+          </div>
 
         <br>
 
-        <div id="result"></div>
+
+        <!-- <div class="outsideContainerTWO">
+            <div id="result">Water score</div>
+            <div id="result2">waste score</div>
+            <div id="result3">energy score</div>
+        </div> -->
+
+
+
+        <form id="test-form" action="https://script.google.com/macros/s/AKfycby-u7KPzDm1K2n5gqs0dh85FSNBcOmO28_ck1oGwDH6uEgKOICW/exec">
+            <div>
+                <!-- <label>ID</label> -->
+                <input id="id_u" type="text" name="tag" placeholder="ID" />
+            </div>
+
+            <div>
+                <!-- <label>E-mail ID</label> -->
+                <input id="mail_u" type="text" name="mail" placeholder="E-mail" />
+            </div>
+
+            <div>
+                <!-- <label>Name</label> -->
+                <input id="name_u" type="text" name="person" placeholder="Name" />
+            </div>
+
+            <div>
+                <label>Energy Score</label>
+                <input id="energy" type="text" name="energy_score" value=0 />
+            </div>
+
+            <div>
+                <label>Water Score</label>
+                <input id="water" type="text" name="water_score" value=0 />
+            </div>
+
+            <div>
+                <label>Waste Score</label>
+                <input id="waste" type="text" name="waste_score" value=0 />
+            </div>
+
+            <div>
+                <label>Total Score</label>
+                <input id="total" type="text" name="total" value=0 />
+            </div>
+
+            <div>
+                <button type="submit" id="submit-form">Submit</button>
+            </div>
+
+        </form>
 
         <script>
             function displayRadioValue() {
-                document.getElementById("result").innerHTML = "";
-                var ele = document.getElementsByTagName('input');
+                //document.getElementById("result").innerHTML = "";
+                var ele = document.getElementsByName('radioButton');
+                var count = 0;
+                var energy = 0;
+                var water = 0;
+                var waste = 0;
 
                 for (i = 0; i < ele.length; i++) {
 
-                    if (ele[i].type = "radio") {
+     
 
-                        if (ele[i].checked)
-                            document.getElementById("result").innerHTML
-                                += ele[i].name + " Value: "
-                                + ele[i].value + "<br>";
-                    }
+                        if (ele[i].checked) {
+                            
+                            if (count >= 10) {
+                                waste += parseInt(ele[i].value);
+                            }
+                            else if (count >= 5) {
+                                energy += parseInt(ele[i].value);
+                            }
+                            else if (count >= 0) {
+                                water += parseInt(ele[i].value);
+                            }
+                        }
+                        count++;
+       
+            
                 }
+                document.getElementById("energy").value =  energy;
+                document.getElementById("water").value = water;
+                document.getElementById("waste").value = waste;
+                document.getElementById("total").value = water + waste + energy;
+                console.log(count);
+
+
             } 
         </script>
 
-    </div>
+<h2>Download game</h2>
+<div class="project-icons">
+    <a href="download.html" i class="fas fa-search"></i></a>
+
+    
 </div>
 
-<div class="parallax parallax">
-    <div class="parallax-content">
-        <h2>DOWNLOAD GAME</h2>
 
-        <a href="link" target="_blank"><i class="fas fa-gamepad fa-5x"></i></a>
+
+
     </div>
-</div>
+</div> 
+
+
 
 
 
@@ -311,6 +489,7 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src='fire.js'></script>
 <script src='form.js'></script>
 </body>
