@@ -268,7 +268,6 @@ header::before {
   background-image: url(../resources/Backgrounds/dark.png);
 }
 
-
 @media screen and (max-width: 1024px) {
   .parallax1 {
     background-image: url(../resources/Backgrounds/grey.jpg);
@@ -322,30 +321,18 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
-
-.outsideContainer{
-  background-color: rgba(255,255,255,0.5);
+.outsideContainer {
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 50px;
   margin: 20px;
-  
-
 }
 
-.outsideContainerTWO{
+.outsideContainerTWO {
   background-color: rgba(174, 221, 221, 0.5);
   padding: 50px;
   margin: 20px;
-  margin-top: 30%;
-  
-
+  margin-top: 15%;
 }
-
-
-
 
 /* The container */
 .container {
@@ -386,7 +373,7 @@ a {
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -403,12 +390,12 @@ a {
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-	background: white;
+  background: white;
 }
 
 
