@@ -17,9 +17,9 @@ var user = firebase.auth().currentUser;
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
         console.log(user.email);
-        document.getElementById("name").innerHTML = "FILL OUT THE FORM " + user.displayName;
+        document.getElementById("name").innerHTML = "how do you impact pollution " + user.displayName + "?";
     }
     else {
         window.location.replace("login.html");
     }
-  })
+})
