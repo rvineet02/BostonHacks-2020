@@ -454,7 +454,11 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
+
 
 a {
   color: #BFC0C0;
@@ -507,8 +511,64 @@ a {
   left: 150px;
 }
 
+/* #submit-form {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+} */
+
 @media screen and (min-width:1000px) {
   h1 {
     font-size: 2.2em;
   }
 }
+
+.center-class{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* button{
+  height:20px; 
+  width:100px; 
+  margin: -20px -50px; 
+  position:relative;
+  top:50%; 
+  left:50%;
+} */
+
+
+.buttonnew {
+  display: flex;
+  border-radius: 4px;
+  background-color: bg-button;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  background: border-box;
+}
+
+input[type=text] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.web {
+    font-size: 20px;
+    font-style: normal;
+    font-variant-caps: unicase;
+}
+
+

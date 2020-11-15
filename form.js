@@ -1,3 +1,25 @@
+var mainApp = {};
+(function(){
+    var firebase = app_firebase;
+    var userId = null;
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in.
+          userId  = user.userId;
+        }else{
+            // should re-direct to the login page 
+            window.location.replace("index.html");
+        }
+      });
+
+      function logOut(){
+          firebase.auth().signOut();
+      }
+
+      mainApp.logOut = logOut;
+})()
+
+
 // var ref = new Firebase('https://fir-7f672.firebaseio.com/');
 // var email = ref.getAuth().password.email;
 // console.log(email);
@@ -63,19 +85,9 @@ $('#submit-form').on('click', function(e) {
     data: $form.serializeObject(),
     success: alert("success")
   });
+  window.location.href = "download.html";
+
 })
-
-function submit(e){
-    e.preventDefault();
-    var jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serializeObject(),
-      success: alert("success")
-    });
-}
-
 
 
 
