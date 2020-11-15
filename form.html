@@ -441,24 +441,27 @@
                     if (true) {
 
                         if (ele[i].checked) {
-                            if (count >= 10) {
+                            if (count >= 10 && count<15) {
                                 waste += parseInt(ele[i].value);
                             }
-                            else if (count >= 5) {
+                            else if (count >= 5 && count < 10) {
                                 energy += parseInt(ele[i].value);
                             }
-                            else if (count >= 0) {
+                            else if (count >= 0 && count < 5) {
                                 water += parseInt(ele[i].value);
                             }
                         }
                         count++;
+                        if(count>=45){
+                            break;
+                        }
                     }
                 }
                 document.getElementById("energy").value =  energy;
                 document.getElementById("water").value = water;
                 document.getElementById("waste").value = waste;
                 document.getElementById("total").value = water + waste + energy;
-                console.log("water score is: "+count);
+                console.log(count);
 
 
             } 
