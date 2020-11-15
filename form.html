@@ -16,8 +16,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script data-ad-client="ca-pub-9493632492624526" async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
         <link type="text/css" rel="stylesheet"
@@ -433,28 +431,25 @@
             function displayRadioValue() {
                 //document.getElementById("result").innerHTML = "";
                 var ele = document.getElementsByName('radioButton');
-                var count = 0;
                 var energy = 0;
                 var water = 0;
                 var waste = 0;
 
                 for (i = 0; i < ele.length; i++) {
 
-     
-
                         if (ele[i].checked) {
-                            
-                            if (count >= 10) {
-                                waste += parseInt(ele[i].value);
-                            }
-                            else if (count >= 5) {
-                                energy += parseInt(ele[i].value);
-                            }
-                            else if (count >= 0) {
+
+                            if(i >= 0 && i <= 15){
                                 water += parseInt(ele[i].value);
                             }
+                            else if(i >= 16 && i <= 30){
+                                energy += parseInt(ele[i].value);
+                            }
+                            else if(i >= 31 && i <= 45){
+                                waste += parseInt(ele[i].value);
+                            }
+                            
                         }
-                        count++;
        
             
                 }
@@ -462,7 +457,6 @@
                 document.getElementById("water").value = water;
                 document.getElementById("waste").value = waste;
                 document.getElementById("total").value = water + waste + energy;
-                console.log(count);
 
 
             } 
