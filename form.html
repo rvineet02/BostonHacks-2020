@@ -25,11 +25,11 @@
 </head>
 
 
-<body style="background-color: #222222;"></body>
+<body style="background-color: #222222;"></body>    
 
 <header>
 
-    <h1 id="name"></h1>
+    <h1 id="display"></h1>
     <h2>Fill out the form to find out</h2>
 
 
@@ -46,6 +46,53 @@
 <div class="parallax parallax">
     <div class="parallax-content">
 
+        <!-- <form id="test-form" action="https://script.google.com/macros/s/AKfycby-u7KPzDm1K2n5gqs0dh85FSNBcOmO28_ck1oGwDH6uEgKOICW/exec">
+            <div>
+                <label>ID</label>
+                <input id="id_u" type="text" name="tag" placeholder="ID" />
+            </div>
+
+            <div>
+                <label>E-mail ID</label>
+                <input id="mail_u" type="text" name="mail" placeholder="E-mail" />
+            </div>
+
+            <div>
+                <label>Name</label>
+                <input id="name_u" type="text" name="person" placeholder="Name" />
+            </div>
+
+            <div>
+                <label>Energy Score</label>
+                <input type="text" name="energy_score" placeholder="Energy Score" />
+            </div>
+
+            <div>
+                <label>Water Score</label>
+                <input type="text" name="water_score" placeholder="Water Score" />
+            </div>
+
+            <div>
+                <label>Waste Score</label>
+                <input type="text" name="waste_score" placeholder="Waste Score" />
+            </div>
+
+            <div>
+                <label>Total Score</label>
+                <input type="text" name="total" placeholder="Total Score" />
+            </div>
+
+            <div>
+                <button type="submit" id="submit-form">Submit</button>
+            </div>
+        </form> -->
+    </div>
+</div> 
+
+
+
+<div class="parallax parallax">
+    <div class="parallax-content">
         <form>
             <h2>question 1</h2>
             <div class="outsideContainer">
@@ -268,23 +315,71 @@
 
         <br>
 
-        <button type="button" onclick="displayRadioValue()">
+        <!-- <button type="button" onclick="displayRadioValue()">
             Submit
-        </button>
+        </button> -->
+
+        <div class="button" id="button-7" onclick="displayRadioValue()">
+            <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
+            <a href="#">Calculate</a>
+          </div>
 
         <br>
 
 
-        <div class="outsideContainerTWO">
+        <!-- <div class="outsideContainerTWO">
             <div id="result">Water score</div>
             <div id="result2">waste score</div>
             <div id="result3">energy score</div>
-        </div>
+        </div> -->
+
+
+
+        <form id="test-form" action="https://script.google.com/macros/s/AKfycby-u7KPzDm1K2n5gqs0dh85FSNBcOmO28_ck1oGwDH6uEgKOICW/exec">
+            <div>
+                <label>ID</label>
+                <input id="id_u" type="text" name="tag" placeholder="ID" />
+            </div>
+
+            <div>
+                <label>E-mail ID</label>
+                <input id="mail_u" type="text" name="mail" placeholder="E-mail" />
+            </div>
+
+            <div>
+                <label>Name</label>
+                <input id="name_u" type="text" name="person" placeholder="Name" />
+            </div>
+
+            <div>
+                <label>Energy Score</label>
+                <input id="en" type="text" name="energy_score" placeholder="Energy Score" />
+            </div>
+
+            <div>
+                <label>Water Score</label>
+                <input id="water" type="text" name="water_score" placeholder="Water Score" />
+            </div>
+
+            <div>
+                <label>Waste Score</label>
+                <input id="waste" type="text" name="waste_score" placeholder="Waste Score" />
+            </div>
+
+            <div>
+                <label>Total Score</label>
+                <input id="total" type="text" name="total" placeholder="Total Score" />
+            </div>
+
+            <div>
+                <button type="submit" id="submit-form">Submit</button>
+            </div>
+        </form>
 
 
         <script>
             function displayRadioValue() {
-                document.getElementById("result").innerHTML = "";
+                document.getElementById("en").innerHTML = "";
                 var ele = document.getElementsByTagName('input');
                 var count = 0;
                 var energy = 0;
@@ -309,16 +404,18 @@
                         count++;
                     }
                 }
-                document.getElementById("result").innerHTML = "Water Score: " + water;
-                document.getElementById("result2").innerHTML = "Waste Score: " + waste;
-                document.getElementById("result3").innerHTML = "Energy Score: " + energy;
+                document.getElementById("en").value = energy;
+                document.getElementById("water").value = water;
+                document.getElementById("waste").value = waste;
+                document.getElementById("total").value = water + waste + energy;
+
 
 
             } 
         </script>
 
     </div>
-</div>
+</div> 
 
 <div class="parallax parallax">
     <div class="parallax-content">
@@ -334,6 +431,7 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src='fire.js'></script>
 <script src='form.js'></script>
 </body>
