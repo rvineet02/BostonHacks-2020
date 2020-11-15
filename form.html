@@ -27,8 +27,13 @@
 <body style="background-color: #222222;"></body>
 
 <header>
+
     <h1 id="name">FILL OUT THE FORM, </h1>
     <h2>How do your actions impact pollution?</h2>
+
+    <h1>how do you impact pollution?</h1>
+    <h2>Fill out the form to find out</h2>
+
 
 
     <div class="scrolldown">
@@ -40,22 +45,68 @@
 
 
 
-<div class="parallax parallax1">
+<div class="parallax parallax">
     <div class="parallax-content">
-        <h2>PUT THE FORM HERE</h2>
+
+        <form>
+            <h2>question 1</h2>
+            <div class="outsideContainer">
+                <label class="container">One
+                    <input type="radio" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Two
+                    <input type="radio" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Three
+                    <input type="radio" name="radio" value="3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Four
+                    <input type="radio" name="radio" value="4">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
 
 
+        <br>
 
+        <button type="button" onclick="displayRadioValue()">
+            Submit
+        </button>
 
+        <br>
+
+        <div id="result"></div>
+
+        <script>
+            function displayRadioValue() {
+                document.getElementById("result").innerHTML = "";
+                var ele = document.getElementsByTagName('input');
+
+                for (i = 0; i < ele.length; i++) {
+
+                    if (ele[i].type = "radio") {
+
+                        if (ele[i].checked)
+                            document.getElementById("result").innerHTML
+                                += ele[i].name + " Value: "
+                                + ele[i].value + "<br>";
+                    }
+                }
+            } 
+        </script>
 
     </div>
 </div>
 
-<div class="parallax parallax3">
+<div class="parallax parallax">
     <div class="parallax-content">
         <h2>DOWNLOAD GAME</h2>
 
-        <a href="link" target="_blank"><i class="fas fa-gamepad"></i></a>
+        <a href="link" target="_blank"><i class="fas fa-gamepad fa-5x"></i></a>
     </div>
 </div>
 
