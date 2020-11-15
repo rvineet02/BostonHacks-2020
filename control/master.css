@@ -234,7 +234,7 @@ header::before {
   position: relative;
   padding: 500px 15px;
   color: #fff;
-  background: url(../resources/Backgrounds/3.jpg);
+  background: url(../resources/Backgrounds/dark.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -261,11 +261,11 @@ header::before {
 }
 
 .parallax2 {
-  background-image: url(../resources/Backgrounds/2.jpg);
+  background-image: url(../resources/Backgrounds/3.jpg);
 }
 
 .parallax3 {
-  background-image: url(../resources/Backgrounds/3.jpg);
+  background-image: url(../resources/Backgrounds/dark.png);
 }
 
 
@@ -331,6 +331,15 @@ a {
   background-color: rgba(255,255,255,0.5);
   padding: 50px;
   margin: 20px;
+  
+
+}
+
+.outsideContainerTWO{
+  background-color: rgba(174, 221, 221, 0.5);
+  padding: 50px;
+  margin: 20px;
+  margin-top: 30%;
   
 
 }
