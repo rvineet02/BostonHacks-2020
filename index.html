@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TAB TITLE</title>
+    <title>Terra Nova</title>
     <meta charset="UTF-8" />
     <meta name="description" content="SITE DESCRIPTION">
     <meta name="author" content="BOSTONHACKS TEAM">
@@ -18,13 +18,17 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script data-ad-client="ca-pub-9493632492624526" async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet"
+            href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
 
 
 <body style="background-color: #222222;"></body>
 
 <header>
-    <h1>TITLE OF THE WEBSITE</h1>
+    <h1>Terra Nova</h1>
     <h2>BOSTONHACKS GAME</h2>
     <div class="social-icons">
         <a href="link" target="_blank"><i class="fa fa-github"></i></a>
@@ -80,12 +84,19 @@
         <p>DESCRIPTION 1</p>
 
         <div class="project-icons">
-            <a href="LINK" target="_blank"><i class="fas fa-search"></i></a>
-            <a href="LINK" target="_blank"><i class="fas fa-search"></i></a>
-            <a href="LINK" target="_blank"><i class="fas fa-search"></i></a>
+            <div id="firebaseui-auth-container"></div>
+            <div id="loader">Loading...</div>
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+            <script src='fire.js'></script>
+            <script src='login.js'></script>
         </div>
     </div>
 </div>
+
+
 
 
 
